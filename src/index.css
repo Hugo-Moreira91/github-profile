@@ -1,0 +1,24 @@
+:root {
+  --font-base: "Be Vietnam Pro", sans-serif;
+
+  --font-size-large-text: 2rem;
+  --font-size-title: 1.25rem;
+  --font-size-body-text: 1rem;
+  --font-size-small-text: .75rem;
+
+  --font-weight-medium: 500;
+
+  --font-color-primary: #CDD5E0;
+  --font-color-secondary: #97A3B6;
+
+  --bg-color-base: #20293A;
+
+  --bg-color-search: #20293A;
+  --bg-color-search-result: #111729;
+  --bg-color-profile-info: #111729;
+
+  --bg-color-line: #364153;
+
+  --bg-primary-color-repo-card: #111729;
+  --bg-secondary-color-repo-card: #1D1B48;
+}
