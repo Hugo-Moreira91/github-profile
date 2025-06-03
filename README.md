@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://hugo-moreira91.github.io/simple-coffee-listing/">
+    <a href="https://hugo-moreira91.github.io/github-profile/">
       Solução
     </a>
     <span> | </span>
