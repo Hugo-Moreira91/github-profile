@@ -83,7 +83,7 @@ Este projeto foi desenvolvido para submissão de um desafio do *site* [DevChalle
 ## Autor
 
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-  <img style="border-radius: 50%; width: 8.5rem" src="https://avatars.githubusercontent.com/u/129432443?s=400&u=ff3281ddf2cf31d4a71b01d46fcb4d8452398749&v=4" alt="Foto do autor">
+  <img style="border-radius: 50%; width: 5rem" src="https://avatars.githubusercontent.com/u/129432443?s=400&u=ff3281ddf2cf31d4a71b01d46fcb4d8452398749&v=4" alt="Foto do autor">
   <a style="margin: 1rem 0;" href="https://github.com/Hugo-Moreira91">Hugo Moreira 🚀</a>
   <p>Feito com ❤️</p>
 </div>
