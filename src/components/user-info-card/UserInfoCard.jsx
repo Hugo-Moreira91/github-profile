@@ -57,7 +57,7 @@ const UserInfo = styled.div`
     justify-content: left;
     margin-bottom: 1.25rem;
 
-    @media(max-width: 40rem) {
+    @media(max-width: 60rem) {
         flex-direction: column;
         gap: 2rem;
         align-items: flex-start;
@@ -84,7 +84,7 @@ const StatsContainer = styled.div`
     margin-left: 2rem;
     margin-bottom: .6rem;
 
-    @media(max-width: 40rem) {
+    @media(max-width: 60rem) {
         margin-left: 0;
     }
 `

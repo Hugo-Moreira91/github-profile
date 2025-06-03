@@ -31,25 +31,34 @@
 
 Acima temos uma breve demonstração do projeto em funcionamento. 
 
-Além da estruturação dos elementos usando flexbox e grid (para os cards dos produtos), tem-se a filtragem de acordo com o botão selecionado - *All Products* (todos os produtos serão exibidos, independente de disponibilidade no momento) e *Available Now* (somente os produtos disponíveis no momento).
+Estruturei os elementos utilizando *flexbox* e *grid* (para os repositórios do usuário pesquisado, caso tenha). Seguindo os designs apresentados pelo desafio, resolvi iniciar a aplicação com o usuário do próprio GitHub. Quanto aos repositórios, limitei a exibição para os quatro mais recentes do perfil. Caso seja do interesse em visualizar todos, o link *View all repositories* pode ser clicado, levando-o(a) para a página de repositórios do usuário no GitHub. Cada card dos repositórios também são clicáveis, levando-o(a) ao respectivo projeto.
+Nessa primeira versão do projeto desenvolvido utilizei a ideia de, a cada alteração no campo de entrada do usuário, uma requisição à API do GitHub é realizada. Isso pode ser um problema, já que a API limita o número de requisições por hora (em caso de não termos um token). Para as próximas versões, buscarei alterar o método de requisição com a implementação de um botão, juntamente com a possibilidade de apertar a tecla *Enter*.
 
 ### O que aprendi
 
-Busquei desenvolver o projeto seguindo a ideia do SPA (Single Page Application) através da ferramenta [React Router](https://v5.reactrouter.com/web/guides/quick-start). Apesar do desafio conter apenas uma página, estruturei-o para receber futuras páginas sem maiores complicações.
+Trabalhar com a API do GitHub foi um desafio na medida em que temos dois *endpoints* distintos - um para buscar o perfil do usuário (apenas público, no meu caso) e outro para buscar os repositórios do mesmo. A documentação oficial, para mim, não é intuitiva e de fácil compreensão. Busquei utilizar anotações próprias para auxiliar no desenvolvimento do projeto.
 
-Separei a requisição ao arquivo JSON (o qual contém as informações necessárias dos cafés - nome, imagem, popularidade, disponibilidade, preço e avaliações) para ser invocada no componente desejado (listagem dos cafés).
+Podemos acrescentar ao *endpoint* dos repositórios um número máximo retornado, o que ajuda a não retornar dezenas (ou até mais) sem necessidade.
+
+Busquei trabalhar novamente com o *grid layout* para assimilar ainda mais os conceitos e sua construção. Utilizar o parâmetro *auto-fit* ajuda bastante na resposividade da aplicação, uma vez que não precisamos fazer uso de *media queries*.
+
+Uso de *hooks* de estado e de efeito para gerenciar e atualizar variáveis que armazenam o usuário pesquisado, bem como o seu perfil no GitHub.
+
+Uso da biblioteca *date-fns* para manipular e exibir o tempo da última atualização de cada repositório exibido.
 
 Componentização de partes do projeto, visando a reutilização e organização dos mesmos.
 
 Aprimoramento da estilização via styled-components.
 
-Filtragem dos produtos de acordo com a escolha de exibição da listagem - todos os produtos ou apenas os disponíveis.
-
 ### Recursos úteis
+
+- [API REST do GitHub](https://docs.github.com/pt/rest?apiVersion=2022-11-28): documentação oficial da API utilizada neste projeto;
 
 - [Requisições usando AXIOS](https://axios-http.com/docs/intro): documentação completa do AXIOS;
 
 - [Flexbox e Grid layout - quando usar?](https://dev.to/codecasts/grid-para-layout-flexbox-para-componentes-gb3): artigo que traz uma boa discussão de quando usar as duas propriedades, de acordo com o intuito do projeto;
+
+- [Date-fns](https://date-fns.org/docs/Getting-Started): documentação oficial da biblioteca em questão;
 
 - [Styled-components](https://styled-components.com/docs): documentação oficial, trazendo desde a explicação até exemplos de uso;
 
@@ -64,8 +73,8 @@ Filtragem dos produtos de acordo com a escolha de exibição da listagem - todos
 - Grid layout
 - React usando VITE
 - Responsividade
-- SPA (Single Page Application)
 - Requisição usando AXIOS
+- Hooks de estado e de efeito
 
 ## Características
 

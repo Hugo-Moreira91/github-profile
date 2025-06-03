@@ -38,6 +38,7 @@ const Header = () => {
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                         placeholder="username"
+                        autocomplete="off"
                     />
                 </InputContainer>
                 {error && <ErrorUser>{error}</ErrorUser>}

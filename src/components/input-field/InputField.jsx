@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const InputField = ({name, value, onChange, placeholder}) => {
+const InputField = ({name, value, onChange, placeholder, autocomplete}) => {
     return (
         <>
             <InputStyled 
@@ -8,7 +8,8 @@ const InputField = ({name, value, onChange, placeholder}) => {
                 name={name}
                 value={value}
                 onChange={onChange}
-                placeholder={placeholder} 
+                placeholder={placeholder}
+                autoComplete={autocomplete} 
             />
         </>
     );
