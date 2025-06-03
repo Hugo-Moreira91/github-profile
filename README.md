@@ -27,7 +27,7 @@
 
 ## Visão geral
 
-![demonstração](./public/medias/project-simple-coffee-listing-demonstration.gif)
+![demonstração](./public/medias/project-github-profile-demonstration.gif)
 
 Acima temos uma breve demonstração do projeto em funcionamento. 
 
