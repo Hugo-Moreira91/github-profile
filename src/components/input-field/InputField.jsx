@@ -4,7 +4,7 @@ const InputField = ({name, value, onChange, placeholder, autocomplete}) => {
     return (
         <>
             <InputStyled 
-                type="text" 
+                type="text"
                 name={name}
                 value={value}
                 onChange={onChange}

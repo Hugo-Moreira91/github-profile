@@ -5,29 +5,29 @@ import { RepoCard } from "../repo-card/RepoCard";
 import styled from "styled-components";
 
 const RepoList = ({ username }) => {
-    const { repos, setRepos, error, setError } = useContext(UserContext);
+    const { repos, setRepos, errorRepos, setErrorRepos } = useContext(UserContext);
 
     useEffect(() => {
         if (!username) {
             setRepos([]);
-            setError(null);
+            setErrorRepos(null);
             return;
         }
 
         fetchUserRepos(username)
             .then((data) => {
                 setRepos(data);
-                setError(null);
+                setErrorRepos(null);
             })
             .catch(() => {
                 setRepos([]);
-                setError("Repositories not found!");
+                setErrorRepos("Repositories not found!");
             })
     }, [username]);
 
     return (
         <>
-            {error && <ErrorRepos>{error}</ErrorRepos>}
+            {errorRepos && <ErrorRepos>{errorRepos}</ErrorRepos>}
 
             <ReposGrid>
                 {repos && repos.map((repo) => (
@@ -48,7 +48,7 @@ const RepoList = ({ username }) => {
 
 const ErrorRepos = styled.p`
     text-align: center;
-    margin-top: .5rem;
+    margin-top: 2rem;
     color: var(--font-color-secondary);
 `
 
