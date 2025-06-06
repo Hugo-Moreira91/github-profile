@@ -34,6 +34,21 @@ Acima temos uma breve demonstração do projeto em funcionamento.
 Estruturei os elementos utilizando *flexbox* e *grid* (para os repositórios do usuário pesquisado, caso tenha). Seguindo os designs apresentados pelo desafio, resolvi iniciar a aplicação com o usuário do próprio GitHub. Quanto aos repositórios, limitei a exibição para os quatro mais recentes do perfil. Caso seja do interesse em visualizar todos, o link *View all repositories* pode ser clicado, levando-o(a) para a página de repositórios do usuário no GitHub. Cada card dos repositórios também são clicáveis, levando-o(a) ao respectivo projeto.
 Nessa primeira versão do projeto desenvolvido utilizei a ideia de, a cada alteração no campo de entrada do usuário, uma requisição à API do GitHub é realizada. Isso pode ser um problema, já que a API limita o número de requisições por hora (em caso de não termos um token). Para as próximas versões, buscarei alterar o método de requisição com a implementação de um botão, juntamente com a possibilidade de apertar a tecla *Enter*.
 
+✨ Nova versão! ✨
+
+Diante do exposto, em relação à restrição de requisições junto a API do GitHub, realizei as seguintes alterações:
+
+1) Adição de um botão para buscar o usuário inserido no campo de busca:
+
+![demonstração botão](./public/medias/project-github-profile-button-demonstration.gif)
+
+2) Pressionar a tecla *Enter* realiza a busca do usuário inserido também!
+
+Com estas alterações evita-se requisições desnecessárias à API. 
+Abaixo segue a demonstração da versão atualizada:
+
+![demonstração atualizada do projeto](./public/medias/project-github-profile-new-version-demonstration.gif)
+
 ### O que aprendi
 
 Trabalhar com a API do GitHub foi um desafio na medida em que temos dois *endpoints* distintos - um para buscar o perfil do usuário (apenas público, no meu caso) e outro para buscar os repositórios do mesmo. A documentação oficial, para mim, não é intuitiva e de fácil compreensão. Busquei utilizar anotações próprias para auxiliar no desenvolvimento do projeto.
@@ -62,7 +77,9 @@ Aprimoramento da estilização via styled-components.
 
 - [Styled-components](https://styled-components.com/docs): documentação oficial, trazendo desde a explicação até exemplos de uso;
 
-- Hooks [useState()](https://react.dev/reference/react/useState) e [useEffect()](https://react.dev/reference/react/useEffect): documentações que tratam do uso dos hooks de estado da aplicação, bem como a sincronização do componente com um sistema externo. 
+- Hooks [useState()](https://react.dev/reference/react/useState) e [useEffect()](https://react.dev/reference/react/useEffect): documentações que tratam do uso dos hooks de estado da aplicação, bem como a sincronização do componente com um sistema externo;
+
+- [Context API](https://react.dev/reference/react/useContext): tudo sobre o *hook* useContext()
 
 ### Construído com
 
@@ -72,6 +89,7 @@ Aprimoramento da estilização via styled-components.
 - Flexbox
 - Grid layout
 - React usando VITE
+- Context API
 - Responsividade
 - Requisição usando AXIOS
 - Hooks de estado e de efeito
